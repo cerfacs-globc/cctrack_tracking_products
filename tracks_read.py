@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import os
 
-def readfile(path,filename):
+def readfile(filename):
 	"""
 	Lit un fichier tracks.txt, le decoupe sur la periode de reference selon le nom du fichier puis le convertit en dataframe des points des trajectoires des cyclones.
 	Les longitudes sont converties pour etre contenues dans la fenetre (-180,+180).
@@ -17,8 +17,7 @@ def readfile(path,filename):
 	#================== OUVERTURE DU FICHIER TRACKS GENERE =================================================
 
 	#on lit les donnees dans un dataframe
-	fichier=os.path.join(path,filename)
-	df = pd.read_table(fichier,sep=" ",header=None)
+	df = pd.read_table(filename,sep=" ",header=None)
 
 	#on nomme les colonnes du dataframe
 	df.columns=['ID','Latitude','Longitude','Vorticity','Pressure','Hour','Day','Month','Year']
