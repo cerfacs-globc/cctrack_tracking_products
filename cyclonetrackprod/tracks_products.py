@@ -8,9 +8,9 @@ from mpl_toolkits.axes_grid1 import make_axes_locatable
 import numpy as np
 import os
 
-import tracks_read
-import tracks_density
-import tracks_tools
+from . import tracks_read
+from . import tracks_density
+from . import tracks_tools
 
 def map_background(domain):
     """

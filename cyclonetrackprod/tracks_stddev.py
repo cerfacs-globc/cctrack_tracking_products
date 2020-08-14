@@ -1,8 +1,8 @@
 
 import numpy as np
 import pandas as pd
-import tracks_density
-import tracks_read
+from . import tracks_density
+from . import tracks_read
 
 def stddev_interannual(df,domain):
     """
