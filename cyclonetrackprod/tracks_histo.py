@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 
-from . import tracks_read.py
-from . import tracks_tools.py
+from . import tracks_read
+from . import tracks_tools
 
 def histo_curve(variableslist,labelvariables,colors,title,xlabel,path):
     """
